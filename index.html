@@ -36,7 +36,7 @@
         window.onload = function() {
             document.getElementById('contact-us').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // these IDs from the previous steps
+                
                 emailjs.sendForm('xxxx', 'xxxxxxx', '#contact-us')
                     .then(() => {
                       window.location.reload();
@@ -525,7 +525,7 @@
           <div class="border-top pt-5">
             <p>
               Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | Flash Fleet Flash Fleetf
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | Flash Fleet Flash Fleet
               Logistics
             </p>
 
