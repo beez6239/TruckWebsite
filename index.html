@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -23,6 +24,28 @@
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
 
+<script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "3CI4FzL1ZL6N6w7z4",
+            });
+        })();
+    </script>
+
+     <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-us').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_rb3bf74', 'template_178uylj', '#contact-us')
+                    .then(() => {
+                      window.location.reload();
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -416,25 +439,25 @@
       <!------ Contact form -->
       <div class="row justify-content-center">
         <div class="col-lg-8 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <form action="#" method="post">
+          <form method="post" id="contact-us">
             <div class="form-group row">
               <div class="col-md-6 mb-4 mb-lg-0">
-                <input type="text" class="form-control" placeholder="First name">
+                <input name="firstname"class="form-control" placeholder="First name" >
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="First name">
+                <input name="lastname" class="form-control" placeholder="Last name">
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-12">
-                <input type="text" class="form-control" placeholder="Email address">
+                <input name="email" type="text"  class="form-control" placeholder="Email address">
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-12">
-                <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30"
+                <textarea name="message" class="form-control" placeholder="Write your message." cols="20"
                   rows="10"></textarea>
               </div>
             </div>
