@@ -27,7 +27,7 @@
 <script type="text/javascript">
         (function() {
             emailjs.init({
-              publicKey: "3CI4FzL1ZL6N6w7z4",
+              publicKey: "xxxxxx",
             });
         })();
     </script>
@@ -37,7 +37,7 @@
             document.getElementById('contact-us').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('service_rb3bf74', 'template_178uylj', '#contact-us')
+                emailjs.sendForm('xxxx', 'xxxxxxx', '#contact-us')
                     .then(() => {
                       window.location.reload();
                     }, (error) => {
