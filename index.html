@@ -27,7 +27,7 @@
 <script type="text/javascript">
         (function() {
             emailjs.init({
-              publicKey: "xxxxxx",
+              publicKey: "3CI4FzL1ZL6N6w7z4",
             });
         })();
     </script>
@@ -37,9 +37,11 @@
             document.getElementById('contact-us').addEventListener('submit', function(event) {
                 event.preventDefault();
                 
-                emailjs.sendForm('xxxx', 'xxxxxxx', '#contact-us')
+                emailjs.sendForm('service_rb3bf74', 'template_178uylj', '#contact-us')
                     .then(() => {
-                      window.location.reload();
+                      // window.location.reload();
+                      document.getElementById('success').style.display="block";
+                      document.getElementById('contact-us').reset();
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
@@ -166,7 +168,7 @@
             </div>
 
             <div class="service text-center">
-              <a href="#"><img src="images/mapvanpic.jpg" alt="Image" class="img-fluid service-img"></a>
+              <a href="#"><img src="images/newmayvan.jpg" alt="Image" class="img-fluid service-img"></a>
               <div class="px-md-3">
                 <h3><a href="#">Local &amp; Regional Delivery</a></h3>
                 <p>We offer fast, flexible, and cost-efficient delivery solutions for local and regional routes. Whether it’s sameday service or scheduled shipments, our drivers know the roads and deliver with reliability you can count on.</p>
@@ -467,6 +469,7 @@
               </div>
             </div>
           </form>
+          <div style="color:rgb(9, 145, 11)"><span id="success" style="display:none" >Thanks for reaching out. We'll get back to you shortly!</span></div>
         </div>
 
       </div>
@@ -480,18 +483,17 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-7">
-              <h2 class="footer-heading mb-4">About Us</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate debitis voluptatum et dolorum.
+              <h2 class="footer-heading mb-4">About us</h2>
+              <p>At Flash Fleet, we believe “Where Every Mile Matters.” From local deliveries to long-haul trucking, we are committed to reliability, safety, and cost-efficient service.
               </p>
             </div>
             <div class="col-md-4 ml-auto">
               <h2 class="footer-heading mb-4">Features</h2>
               <ul class="list-unstyled">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#owner-operators">Owner Operators</a></li>
+                <li><a href="#services-section">Service</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
               </ul>
             </div>
 
@@ -499,25 +501,20 @@
         </div>
         <div class="col-md-4 ml-auto">
 
-          <div class="mb-5">
-            <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-            <form action="#" method="post" class="footer-suscribe-form">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent"
-                  placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                </div>
-              </div>
-          </div>
+          <div class="mb-5">. 
+            <h2 class="footer-heading mb-4" >admin@flashfleetflogistics.com</h2>
+            <h2 class="footer-heading mb-4" >Call us - (317)-457-6477 </h2>
+            <h2 class="footer-heading mb-4" >Address - 9244 Ogden Dunes Ct, Camby, IN 46113 </h2>
 
+           
+          </div>
+             
 
           <h2 class="footer-heading mb-4">Follow Us</h2>
           <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
           <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
           <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
           <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-          </form>
         </div>
       </div>
       <div class="row pt-5 mt-5 text-center">
@@ -525,7 +522,7 @@
           <div class="border-top pt-5">
             <p>
               Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | Flash Fleet Flash Fleet
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | Flash Fleet
               Logistics
             </p>
 
