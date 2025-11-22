@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
@@ -24,13 +27,14 @@
     <div class="site-wrap" id="home-section">
 
         <div class="site-mobile-menu site-navbar-target">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
-        </div>
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+      <!-- Close button -->
+      <i class="fa-solid fa-xmark js-menu-toggle"></i>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
 
         <div class="top-bar">
             <div class="container">
@@ -66,21 +70,25 @@
                         <nav class="site-navigation text-right ml-auto " role="navigation">
                             <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                                 <li><a href="index.html" class="nav-link">Home</a></li>
-                                <li><a href="index.html#services-section" class="nav-link custom-block-headings">Services</a></li>
+                                <li><a href="index.html#services-section"
+                                        class="nav-link custom-block-headings">Services</a></li>
                                 <li><a href="index.html#about-section" class="nav-link">About Us</a></li>
                                 <li><a href="index.html#why-us-section" class="nav-link">Why Us</a></li>
                                 <li><a href="index.html#owner-operators" class="nav-link">For Owner Operators</a></li>
                                 <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
                                 <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
 
-                                  <li><a href="help.html" class="nav-link">Help</a></li>
+                                <li><a href="help.html" class="nav-link">Help</a></li>
                             </ul>
                         </nav>
                     </div>
 
-                    <div class="toggle-button d-inline-block d-lg-none">
-                        <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
-                    </div>
+                     <!----------Mobile button -->
+          <div class="toggle-button d-inline-block d-lg-none">
+            <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+             <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
 
                 </div>
             </div>
@@ -94,13 +102,21 @@
                             <h2 class="text-center">Terms & Conditions</h2>
 
                             <div class="privacy-content mt-5">
-                                <p>Welcome to Flash Fleet Logistics LLC (“Flash Fleet”, “we”, “our”, or “us”). By accessing or using our website, services, or communication tools, you agree to comply with and be bound by the following Terms & Conditions. Please read these terms carefully before using our services.</p>
+                                <p>Welcome to Flash Fleet Logistics LLC (“Flash Fleet”, “we”, “our”, or “us”). By
+                                    accessing or using our website, services, or communication tools, you agree to
+                                    comply with and be bound by the following Terms & Conditions. Please read these
+                                    terms carefully before using our services.</p>
 
                                 <h3>1. Acceptance of Terms</h3>
-                                <p>By accessing or using our website or any of our logistics and dispatch services, you acknowledge that you have read, understood, and agree to these Terms & Conditions, as well as our <a href="privacy.html">Privacy Policy</a>.</p>
+                                <p>By accessing or using our website or any of our logistics and dispatch services, you
+                                    acknowledge that you have read, understood, and agree to these Terms & Conditions,
+                                    as well as our <a href="privacy.html">Privacy Policy</a>.</p>
 
                                 <h3>2. Services Provided</h3>
-                                <p>Flash Fleet Logistics LLC provides dispatching, logistics coordination, and transportation management services to owner operators, drivers, and businesses. Service availability and performance depend on location, capacity, and other operational factors.</p>
+                                <p>Flash Fleet Logistics LLC provides dispatching, logistics coordination, and
+                                    transportation management services to owner operators, drivers, and businesses.
+                                    Service availability and performance depend on location, capacity, and other
+                                    operational factors.</p>
 
                                 <h3>3. User Responsibilities</h3>
                                 <p>Users agree to:</p>
@@ -111,43 +127,140 @@
                                 </ul>
 
                                 <h3>4. Communication and SMS Policy</h3>
-                                <p>By providing your phone number, you consent to receive SMS notifications related to your services, such as load confirmations or dispatch updates. Message frequency may vary. Message and data rates may apply. You can opt out anytime by replying “STOP”.</p>
+                                <p>By providing your phone number, you consent to receive SMS notifications related to
+                                    your services, such as load confirmations or dispatch updates. Message frequency may
+                                    vary. Message and data rates may apply. You can opt out anytime by replying “STOP”.
+                                </p>
                                 <p><strong>SMS consent is not shared with third parties or affiliates.</strong></p>
+                                <h3>4a. SMS Terms & Conditions</h3>
+
+                                <p><strong>SMS Consent Communication:</strong></p>
+                                <p>
+                                    The information (Phone Numbers) obtained as part of the SMS consent process will not
+                                    be shared with third parties for marketing purposes.
+                                </p>
+
+                                <h4>Types of SMS Communications:</h4>
+                                <p>
+                                    If you have consented to receive text messages from Flash Fleet Logistics LLC, you
+                                    may receive messages related to the following (provide specific examples):
+                                </p>
+                                <p><em>Conversation external</em></p>
+                                <p>
+                                    Example: "Hello, this is a friendly reminder of your upcoming appointment with Dr.
+                                    [Name] at [Location] on [Date] at [Time]. You can reply STOP to opt out of SMS
+                                    messaging from Flash Fleet Logistics LLC at any time."
+                                </p>
+
+                                <h4>Message Frequency:</h4>
+                                <p>
+                                    Message frequency may vary depending on the type of communication. For example, you
+                                    may receive up to [X] SMS messages per week related to your appointments/billing,
+                                    etc.
+                                </p>
+                                <p>
+                                    Example: "Message frequency may vary. You may receive up to 2 SMS messages per week
+                                    regarding your appointments or account status."
+                                </p>
+
+                                <h4>Potential Fees for SMS Messaging:</h4>
+                                <p>
+                                    Please note that standard message and data rates may apply, depending on your
+                                    carrier’s pricing plan. These fees may vary if the message is sent domestically or
+                                    internationally.
+                                </p>
+
+                                <h4>Opt-In Method:</h4>
+                                <p>
+                                    You may opt in to receive SMS messages from Flash Fleet Logistics LLC in the
+                                    following ways:
+                                </p>
+                                <ul>
+                                    <li>By submitting an online form</li>
+                                </ul>
+
+                                <h4>Opt-Out Method:</h4>
+                                <p>
+                                    You can opt out of receiving SMS messages at any time. To do so, simply reply "STOP"
+                                    to any SMS message you receive. Alternatively, you can contact us directly to
+                                    request removal from our messaging list.
+                                </p>
+
+                                <h4>Help:</h4>
+                                <p>
+                                    If you are experiencing any issues, you can reply with the keyword HELP. Or, you can
+                                    get help directly from us at <a
+                                        href="https://flashfleetdisp.com/">https://flashfleetdisp.com/</a> or call (317)
+                                    779-3967, (317)-910-0160.
+                                </p>
+
+                                <h4>Additional Options:</h4>
+                                <p>
+                                    If you do not wish to receive SMS messages, you can choose not to check the SMS
+                                    consent box on our forms.
+                                </p>
+
+                                <h4>Standard Messaging Disclosures:</h4>
+                                <ul>
+                                    <li>Message and data rates may apply.</li>
+                                    <li>You can opt out at any time by texting "STOP."</li>
+                                    <li>For assistance, text "HELP" or visit our <a href="privacy.html">Privacy
+                                            Policy</a> and <a href="terms.html">Terms and Conditions</a> pages.</li>
+                                    <li>Message frequency may vary.</li>
+                                </ul>
+
 
                                 <h3>5. Intellectual Property</h3>
-                                <p>All content on this website—including text, images, logos, and designs is the property of Flash Fleet Logistics LLC and is protected by intellectual property laws. You may not reproduce, distribute, or modify any part of the website without written permission.</p>
+                                <p>All content on this website—including text, images, logos, and designs is the
+                                    property of Flash Fleet Logistics LLC and is protected by intellectual property
+                                    laws. You may not reproduce, distribute, or modify any part of the website without
+                                    written permission.</p>
 
                                 <h3>6. Limitation of Liability</h3>
-                                <p>Flash Fleet Logistics LLC is not responsible for any indirect, incidental, or consequential damages arising from your use of the website or services. We strive for accuracy and reliability, but we do not guarantee uninterrupted or error free service.</p>
+                                <p>Flash Fleet Logistics LLC is not responsible for any indirect, incidental, or
+                                    consequential damages arising from your use of the website or services. We strive
+                                    for accuracy and reliability, but we do not guarantee uninterrupted or error free
+                                    service.</p>
 
                                 <h3>7. Third Party Links</h3>
-                                <p>Our website may contain links to third party websites or services that are not controlled or operated by us. We are not responsible for the content or privacy practices of those sites.</p>
+                                <p>Our website may contain links to third party websites or services that are not
+                                    controlled or operated by us. We are not responsible for the content or privacy
+                                    practices of those sites.</p>
 
                                 <h3>8. Termination of Access</h3>
-                                <p>We reserve the right to suspend or terminate access to our website or services at any time, with or without notice, for any reason including violations of these Terms & Conditions.</p>
+                                <p>We reserve the right to suspend or terminate access to our website or services at any
+                                    time, with or without notice, for any reason including violations of these Terms &
+                                    Conditions.</p>
 
                                 <h3>9. Governing Law</h3>
-                                <p>These Terms & Conditions are governed by the laws of the State of Indiana, without regard to its conflict of law principles. Any disputes arising from these terms shall be resolved in the appropriate courts of Marion County, Indiana.</p>
+                                <p>These Terms & Conditions are governed by the laws of the State of Indiana, without
+                                    regard to its conflict of law principles. Any disputes arising from these terms
+                                    shall be resolved in the appropriate courts of Marion County, Indiana.</p>
 
                                 <h3>10. Changes to These Terms</h3>
-                                <p>We may update these Terms & Conditions periodically. Any changes will be posted on this page with a new “Last Revised” date. Continued use of our website or services after updates constitutes acceptance of the new terms.</p>
+                                <p>We may update these Terms & Conditions periodically. Any changes will be posted on
+                                    this page with a new “Last Revised” date. Continued use of our website or services
+                                    after updates constitutes acceptance of the new terms.</p>
 
                                 <h3>11. Contact Us</h3>
-                                <p>If you have questions about these Terms & Conditions, please contact us:</p> 
+                                <p>If you have questions about these Terms & Conditions, please contact us:</p>
                                 <p>
                                     Email: <a href="mailto:info@flashfleetdisp.com">info@flashfleetdisp.com</a><br>
-                                    Email: <a href="mailto:admin@flashfleetflogistics.com">admin@flashfleetflogistics.com</a><br>
+                                    Email: <a
+                                        href="mailto:admin@flashfleetflogistics.com">admin@flashfleetflogistics.com</a><br>
                                     Phone: (317) 779-3967, (317)-910-0160<br>
                                     Address: 9244 Ogden Dunes Ct, Camby, IN 46113
                                 </p>
 
-                               
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <footer class="site-footer">
             <div class="container">
@@ -156,7 +269,9 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="footer-heading mb-4">About us</h2>
-                                <p>At Flash Fleet, we believe “Where Every Mile Matters.” From local deliveries to long-haul trucking, we are committed to reliability, safety, and cost-efficient service.</p>
+                                <p>At Flash Fleet, we believe “Where Every Mile Matters.” From local deliveries to
+                                    long-haul trucking, we are committed to reliability, safety, and cost-efficient
+                                    service.</p>
                             </div>
                             <div class="col-md-4 ml-auto">
                                 <h2 class="footer-heading mb-4">Features</h2>

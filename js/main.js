@@ -67,6 +67,7 @@ jQuery(document).ready(function($) {
 		$('body').on('click', '.js-menu-toggle', function(e) {
 			var $this = $(this);
 			e.preventDefault();
+            console.log('Toggle clicked');
 
 			if ( $('body').hasClass('offcanvas-menu') ) {
 				$('body').removeClass('offcanvas-menu');
@@ -316,4 +317,6 @@ jQuery(document).ready(function($) {
 
 
 
+
 });
+
